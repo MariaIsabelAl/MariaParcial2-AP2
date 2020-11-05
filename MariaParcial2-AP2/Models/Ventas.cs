@@ -11,7 +11,6 @@ namespace MariaParcial2_AP2.Models
     {
         [Key]
         public int VentaId { get; set; }
-
         public DateTime Fecha { get; set; }
         public int ClienteId { get; set; }
         public double Monto { get; set; }

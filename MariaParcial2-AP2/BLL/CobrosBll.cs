@@ -30,10 +30,11 @@ namespace MariaParcial2_AP2.BLL
 
                 foreach (var item in cobros.CobrosDetalle)
                 {
+                    
                     var auxCobro = contexto.Ventas.Find(item.VentaId);
                     if (auxCobro != null)
                     {
-                        auxCobro.Balance -= item.Balance;
+                        auxCobro.Balance -= item.Cobrado;
                     }
                 }
                 
@@ -218,5 +219,29 @@ namespace MariaParcial2_AP2.BLL
             return encontrado;
 
         }
+
+        /*public static async Task<List<CobrosDetalle>> GetVentasPendientes(int clienteId)
+        {
+            var pendientes = new List<CobrosDetalle>();
+            Contexto contexto= new Contexto();
+
+            var ventas = await contexto.Ventas
+            .where(v => v.clienteId == clienteId && v. Balance > 0)
+            .AsNoTracking()
+            .TolistAnsyc();
+
+            foreach (var item in ventas)
+            {
+                pendientes.Add(new CobrosDetalle()
+                {
+                    VentaId = item.VentaId,
+                    Venta = item,
+                    Cobrado=0,
+                });
+            }
+
+            return pendientes;
+        }*/
+
     }
 }

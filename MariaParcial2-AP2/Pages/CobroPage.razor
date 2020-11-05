@@ -87,7 +87,7 @@
                                     <th>Balance</th>
                                     <th>Cobrado</th>
                                     <th>Pagar</th>
-                                    <th>     </th>
+                                    <th>   </th>
                                 </tr>
                             </thead>
                             <tbody class="bg-white">
@@ -99,7 +99,7 @@
                                         <td>@item.Monto</td>
                                         <td>@item.Balance</td>
                                         <td>@item.Cobrado</td>
-                                        <td><input type="checkbox" name="casilla" value="item.Cobrado"class="form-check" ></td>
+                                        <td><input type="checkbox" @onchange="@(() => Cobrar(item))"></td>
                                         <td><button type="button" class="btn btn-outline-danger" @onclick="(() => EliminarCobrosDetalle(item))">Remover</button></td>
                                     </tr>
                                 }
@@ -109,10 +109,20 @@
                         </table>
                     </div>
 
+                    @*Totales *@
+                    <div class="form-group">
+                        <div class="form-control col-6" style="float:left;">
+                            <label>Total:</label>
+                            <span>@cobros.CobrosDetalle.Count()</span>
+                        </div>
+                        
+                       
+                    </div>
+
                     @*Total*@
                     <div class="form-group">
-                        <label>Total:</label>
-                        <InputNumber @bind-Value="cobros.Cobrado" class="form-control col-5" readonly="true" />
+                        <label>Total Cobrado:</label>
+                        <InputNumber @bind-Value="cobros.Cobrado" class="form-control col-5" readonly="true" style="float:right;"/>
                         <ValidationMessage For="@(() => cobros.Cobrado)" />
                     </div>
 
@@ -203,7 +213,6 @@
                 Fecha= encontrarfecha,
                 Monto=encontrarmonto,
                 Balance=encontrarbalance,
-                Cobrado = encontrarbalance
                 
             });
         encontrarmonto=0;
@@ -211,8 +220,14 @@
         encontrarbalance=0; 
 
         
-        CalcularTotal();
 
+    }
+
+    private void Cobrar(CobrosDetalle detalle)
+    {
+        var item = VentasBLL.Buscar(cobros.VentaId);
+        detalle.Cobrado = item.Balance;
+        CalcularTotal();
     }
 
     private void Get()
@@ -240,15 +255,6 @@
         cobros.Cobrado = Total;
     }
 
-    private double CalcularCobrado()
-    {
-        double cobrado = 0;
-        foreach (var item in cobros.CobrosDetalle)
-        {
-            cobrado = item.Balance;
-        }
-        return cobros.Cobrado = cobrado;
-    }
 
     private void EliminarCobrosDetalle(CobrosDetalle detalle)
     {

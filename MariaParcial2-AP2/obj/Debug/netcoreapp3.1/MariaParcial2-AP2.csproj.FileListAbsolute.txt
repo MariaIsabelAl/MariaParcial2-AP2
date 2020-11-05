@@ -98,5 +98,7 @@ C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\MariaPa
 C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\MariaParcial2-AP2.genruntimeconfig.cache
 C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CobroPage.razor.g.cs
 C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\Razor\Pages\CobroPage.razor.g.cs
-C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Checkbox.razor.g.cs
-C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\Razor\Pages\Checkbox.razor.g.cs
+C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ConsultaCobro.razor.g.cs
+C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\Razor\Pages\ConsultaCobro.razor.g.cs
+C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ConsultaVentas.razor.g.cs
+C:\Aplicada2\MariaParcial2-AP2\MariaParcial2-AP2\obj\Debug\netcoreapp3.1\Razor\Pages\ConsultaVentas.razor.g.cs
