@@ -227,6 +227,7 @@
     {
         var item = VentasBLL.Buscar(cobros.VentaId);
         detalle.Cobrado = item.Balance;
+        item.Balance -= detalle.Cobrado;
         CalcularTotal();
     }
 
@@ -281,6 +282,8 @@
         }
         else
         {
+            var item = VentasBLL.Buscar(cobros.VentaId);
+            item.Balance -= cobros.Cobrado;
             paso = CobrosBLL.Guardar(cobros);
 
             if (paso)

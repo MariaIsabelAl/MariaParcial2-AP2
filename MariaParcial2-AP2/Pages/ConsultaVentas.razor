@@ -58,7 +58,7 @@
                         <td>@item.Fecha</td>
                         <td>@item.ClienteId</td>
                         <td>@item.Monto</td>
-                        <td>@item.Balance</td>
+                        <td>@Get()</td>
                         <a href="/cobro/@item.VentaId">VER</a>
                     </tr>
                 }
@@ -113,6 +113,33 @@
             throw;
         }
     }
+
+     private double Get()
+    {
+        double valor = 0;
+        Ventas ventas= new Ventas();
+        Cobros cobros= new Cobros();
+
+        try
+        {
+            if(cobros.Cobrado==0){
+                valor = ventas.Balance;
+            }
+            else{
+                valor = ventas.Balance-cobros.Cobrado;
+            }
+            
+            return valor;
+        }
+        catch (Exception)
+        {
+
+            toast.ShowError("La monto debe ser numerico..");
+        }
+
+        return valor;
+    }
+
 
     private int GetId()
     {

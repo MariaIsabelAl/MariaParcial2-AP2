@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": 795293726,
+        "Kind": "Components.Component",
+        "Name": "MariaParcial2_AP2.Pages.ConsultaCobro",
+        "AssemblyName": "MariaParcial2-AP2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ConsultaCobro"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MariaParcial2_AP2.Pages.ConsultaCobro"
+        }
+      },
+      {
+        "HashCode": 537316056,
+        "Kind": "Components.Component",
+        "Name": "MariaParcial2_AP2.Pages.ConsultaCobro",
+        "AssemblyName": "MariaParcial2-AP2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MariaParcial2_AP2.Pages.ConsultaCobro"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MariaParcial2_AP2.Pages.ConsultaCobro",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1101338943,
         "Kind": "Components.Component",
         "Name": "MariaParcial2_AP2.Pages.Counter",
@@ -144,39 +177,6 @@
         }
       },
       {
-        "HashCode": 165731563,
-        "Kind": "Components.Component",
-        "Name": "MariaParcial2_AP2.Pages.Checkbox",
-        "AssemblyName": "MariaParcial2-AP2",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Checkbox"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "MariaParcial2_AP2.Pages.Checkbox"
-        }
-      },
-      {
-        "HashCode": -1242103304,
-        "Kind": "Components.Component",
-        "Name": "MariaParcial2_AP2.Pages.Checkbox",
-        "AssemblyName": "MariaParcial2-AP2",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MariaParcial2_AP2.Pages.Checkbox"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "MariaParcial2_AP2.Pages.Checkbox",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1483123555,
         "Kind": "Components.Component",
         "Name": "MariaParcial2_AP2.Pages.CobroPage",
@@ -226,6 +226,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "MariaParcial2_AP2.Pages.CobroPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 400166516,
+        "Kind": "Components.Component",
+        "Name": "MariaParcial2_AP2.Pages.ConsultaVentas",
+        "AssemblyName": "MariaParcial2-AP2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ConsultaVentas"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MariaParcial2_AP2.Pages.ConsultaVentas"
+        }
+      },
+      {
+        "HashCode": -2021778642,
+        "Kind": "Components.Component",
+        "Name": "MariaParcial2_AP2.Pages.ConsultaVentas",
+        "AssemblyName": "MariaParcial2-AP2",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MariaParcial2_AP2.Pages.ConsultaVentas"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MariaParcial2_AP2.Pages.ConsultaVentas",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15139,8 +15172,13 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Aplicada2\\MariaParcial2-AP2\\MariaParcial2-AP2\\Pages\\Checkbox.razor",
-      "TargetPath": "Pages\\Checkbox.razor",
+      "FilePath": "c:\\Aplicada2\\MariaParcial2-AP2\\MariaParcial2-AP2\\Pages\\ConsultaVentas.razor",
+      "TargetPath": "Pages\\ConsultaVentas.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Aplicada2\\MariaParcial2-AP2\\MariaParcial2-AP2\\Pages\\ConsultaCobro.razor",
+      "TargetPath": "Pages\\ConsultaCobro.razor",
       "FileKind": "component"
     },
     {
